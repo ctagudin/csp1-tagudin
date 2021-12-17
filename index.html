@@ -5,9 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Carlo Tagudin | Portfolio</title>
 	<!-- googlefonts -->
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
 	<!-- font awesome -->
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- bootstrap css -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
@@ -16,7 +18,7 @@
 </head>
 <body>
 	<!-- nav -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
 	<!-- <a class="navbar-brand" href="#">Navbar</a> -->
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -25,16 +27,16 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav m-auto">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Carlo <span class="sr-only">(current)</span></a>
+	        <a class="nav-link font-weight-bold" href="#hero">Carlo <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Projects</a>
+	        <a class="nav-link" href="#projects">Projects</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Tools</a>
+	        <a class="nav-link" href="#tools">Tools</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Contact</a>
+	        <a class="nav-link" href="#contact">Contact</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -42,16 +44,16 @@
 	<!-- end of nav -->
 
 
-	<section class="bg-secondary">
-		<div class="container-fluid">
-			<div class="row my-1 py-5 justify-content-center border border-dark" >
-				<div class="col-12 col-md-8 border border-dark">
-					<p>Hi! My name is Carlo! :D</p>
-					<p>Front-End | Back-End | Full-Stack</p>
-					<p>Let's get started, shall we?</p>				
+	<section id="hero" class="bg-secondary jumbotron">
+		<div class="container-fluid pb-5">
+			<div class="row py-5 justify-content-center" >
+				<div class="col-12 col-md-9">
+					<p id="hiName" class="pt-5">Hi! My name is Carlo! :D</p>
+					<p id="stack" >Front-End | Back-End | Full-Stack</p>
+					<p id="lets" class="pt-5">Let's get started, shall we?</p>				
 				</div>
-				<div class="col-12 col-md-2 border border-dark">
-					<img src="https://www.biography.com/.image/t_share/MTE5NDg0MDU0ODg4ODA5OTk5/charles-babbage-wc-9193834-1-402.jpg" class="img-fluid rounded-circle border border-dark">
+				<div class="col-12 col-md-2 pt-5">
+					<img src="https://lh3.googleusercontent.com/a-/AOh14GjGap2-00qFG5K-7yS2py5FaxUcPho8KBhOs7W-ZA=s360-p-rw-no" class="img-fluid rounded-circle border border-dark">
 				</div>
 
 				
@@ -59,71 +61,123 @@
 		</div>
 	</section>
 
-	<section id="projects" class="container-fluid">
-		<h3 class="text-center">My Projects</h3>
+	<section id="projects" class="jumbotron bg-white my-5">
+		<h3 class="text-center my-5 font-weight-bold">My Projects</h3>
 		<div class="card-deck justify-content-center">
-		  <div class="card m-3">
-		    <img src="..." class="card-img-top" alt="...">
+		  <div class="card col-12 col-md-3">
+		    <img src="https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top mt-2" alt="...">
 		    <div class="card-body">
-		      <h5 class="card-title">Card title</h5>
-		      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		      <h5 class="card-title">E-Commerce</h5>
+		      <p class="card-text">Here is a project I made during my time at Zuitt Coding Bootcamp. A website that showcases the catalogue of a generic store, links to other pages of the site, and a cart.</p>
 		      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 		    </div>
 		  </div>
-		  <div class="card m-3">
-		    <img src="..." class="card-img-top" alt="...">
+		  <div class="card col-md-3">
+		    <img src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top mt-2" alt="...">
 		    <div class="card-body">
-		      <h5 class="card-title">Card title</h5>
-		      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+		      <h5 class="card-title">Carousel</h5>
+		      <p class="card-text">The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.</p>
 		      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 		    </div>
 		  </div>
-		  <div class="card m-3">
-		    <img src="..." class="card-img-top" alt="...">
+		  <div class="card col-md-3">
+		    <img src="https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top mt-2" alt="...">
 		    <div class="card-body">
-		      <h5 class="card-title">Card title</h5>
-		      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+		      <h5 class="card-title">Gacha Simulator</h5>
+		      <p class="card-text">This is a project that I had fun making. Since I play some Gacha games, I wanted to make an app so I can pull on my own.</p>
+		      <p>5🌟 RATE UP!!!! LETS GO!!!</p>
 		      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 		    </div>
 		  </div>
 		</div>		
 	</section>
 
-	<section id="tools" class="bg-secondary">
-		<div class="container-fluid border border-dark">
-			<h3 class="text-center">My Toolset</h3>
-			<div class="row justify-content-around">
+	<section id="tools" class="jumbotron bg-secondary">
+		<div class="container-fluid">
+			<h3 class="text-center m-5 font-weight-bold">My Toolset</h3>
+			<div class="row justify-content-center my-5">
 				<div class="col-12 col-md-3">
 					<h4 class="text-center">Front-End</h4>
 					<div class="d-flex flex-wrap justify-content-center mb-4">
-						<img height="120" src="../resources/s10-images/logo-html5.png">
-						<img height="120" src="../resources/s10-images/logo-javascript.png">
-						<img height="120" src="../resources/s10-images/logo-css3.png">	
-						<img height="120" src="../resources/s10-images/logo-bootstrap.png">
+						<img height="125" src="../resources/s10-images/logo-html5.png">
+						<img height="125" src="../resources/s10-images/logo-javascript.png">
+						<img height="125" src="../resources/s10-images/logo-css3.png">	
+						<img height="125" src="../resources/s10-images/logo-bootstrap.png">
 					</div>
 				</div>
 				<div class="col-12 col-md-3">
 					<h4 class="text-center">M E R N</h4>
 					<div class="d-flex flex-wrap justify-content-center mb-4">
-						<img height="120" src="../resources/s10-images/logo-html5.png">
-						<img height="120" src="../resources/s10-images/logo-javascript.png">
-						<img height="120" src="../resources/s10-images/logo-css3.png">	
-						<img height="120" src="../resources/s10-images/logo-bootstrap.png">
+						<img height="125" src="../resources/s10-images/logo-mongodb.png">
+						<img height="125" src="../resources/s10-images/logo-expressjs.png">
+						<img height="125" src="../resources/s10-images/logo-react.png">	
+						<img height="125" src="../resources/s10-images/logo-nodejs.png">
 					</div>
 				</div>
 				<div class="col-12 col-md-3">
 					<h4 class="text-center">Others</h4>
 					<div class="d-flex flex-wrap justify-content-center mb-4">
-						<img height="120" src="../resources/s10-images/logo-html5.png">
-						<img height="120" src="../resources/s10-images/logo-javascript.png">
-						<img height="120" src="../resources/s10-images/logo-css3.png">	
-						<img height="120" src="../resources/s10-images/logo-bootstrap.png">
+						<img height="125" src="../resources/s10-images/logo-postman.png">
+						<img height="125" src="../resources/s10-images/logo-heroku.png">
+						<img height="125" src="../resources/s10-images/logo-git.png">	
+						<img height="125" src="../resources/s10-images/logo-sublime-text-3.png">
 					</div>
 				</div>				
 			</div>
 		</div>
 	</section>
 
+	<section id="contact">
+		<div class="p-5 container-fluid">
+			<h3 class="text-center my-3 font-weight-bold">Contact</h3>
+			<div class="row justify-content-center my-5">
+				<a href="#" class="px-3">Facebook</a>
+				<span> |</span>
+				<a href="#" class="px-3">Twitter</a>
+				<span> |</span>
+				<a href="#" class="px-3">LinkedIn</a>
+				<span> |</span>
+				<a href="#" class="px-3">Github</a>
+				<span> |</span>
+				<a href="#" class="px-3">Gitlab</a>
+			</div>
+
+
+			<div class="row justify-content-around">
+				<div class="col-12 col-md-4">
+					<h4 class="text-center mb-4">Where Am I?</h4>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27318.851327634893!2d121.1370650296699!3d14.609198207729511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7eaa7033e9d%3A0x4c2b052f0644e13a!2sAli%20Mall!5e0!3m2!1sen!2sph!4v1639641389144!5m2!1sen!2sph" frameborder="0" id="gmap" style="height: 50vh; width: 100%;"></iframe>
+				</div>
+				<div class="col-12 col-md-4">
+					<h4 class="text-center">Message Me!</h4>
+					<form>
+						<div class="form-group">
+							<label for="txt-username">Name:</label>
+							<input type="text" name="name" id="txt-username" placeholder="Enter name" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="txt-email">Email</label>
+							<input type="email" name="email" id="txt-email" placeholder="Enter Email" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="txt-message">Message:</label>
+							<textarea class="form-control" id="txt-message" rows="3" placeholder="Hey Carlo, Whats up!"></textarea>							
+						</div>
+						<button type="submit" class="btn btn-block btn-outline-primary">Send</button>
+					</form>
+				</div>
+
+			</div>
+		</div>
+		
+	</section>
+
+	<footer class="p-1 bg-dark mt-3">
+		<h6 class="text-center text-white">Carlo Adriel Tagudin</h6>
+		<h6 class="text-center text-white">2022</h6>
+
+
+	</footer>
 
 
 

@@ -1,9 +1,26 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "Verdana", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
-.card {
-	width: 10rem;
+html {
+	scroll-behavior: smooth;
+}
+
+.card-img-top {
+	min-height: 100px;
+	max-height: 200px;
+}
+
+#hiName {
+	font-size: 4rem;
+}
+
+#stack {
+	font-size: 1.2rem;
+}
+
+#lets {
+	font-size: 2rem;
 }
